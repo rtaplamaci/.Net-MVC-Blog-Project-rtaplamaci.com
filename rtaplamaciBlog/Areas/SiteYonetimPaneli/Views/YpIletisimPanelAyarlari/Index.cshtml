@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "İletişim Paneli Ayarları | Site Yönetim Paneli";
+    Layout = "~/Areas/SiteYonetimPaneli/Views/Shared/YpLayout.cshtml";
+}
+@model rtaplamaciBlog.Models.IletisimAyar
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">İletişim Paneli Ayarları</h3>
+                </div>
+                @using (Html.BeginForm("Index", "YpIletisimPanelAyarlari", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="box-body">
+                        @if (TempData["Basarili"] != null)
+                        {
+                            <div class="alert alert-success alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h4><i class="icon fa fa-info"></i> Bilgi!</h4>
+                                <p style="font-size:large">@TempData["Basarili"]</p>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <label for="MDescripton">Meta Description</label>
+                            <input type="text" class="form-control" id="MDescripton" placeholder="Meta Description" value="@Model.MDescripton" name="MDescripton">
+                        </div>
+                        <div class="form-group">
+                            <label for="MAuthor">Meta Author</label>
+                            <input type="text" class="form-control" id="MAuthor" placeholder="Meta Author" value="@Model.MAuthor" name="MAuthor">
+                        </div>
+                        <div class="form-group">
+                            <label for="MUrl">Meta Url</label>
+                            <input type="text" class="form-control" id="MUrl" placeholder="Meta Url" value="@Model.MUrl" name="MUrl">
+                        </div>
+                        <div class="form-group">
+                            <label for="MKeywords">Meta Keyword</label>
+                            <input type="text" class="form-control" id="MKeywords" placeholder="Meta Keyword" value="@Model.MKeywords" name="MKeywords">
+                        </div>
+                        <div class="form-group">
+                            <label for="STitle">Sayfa Title</label>
+                            <input type="text" class="form-control" id="STitle" placeholder="Sayfa Title" value="@Model.STitle" name="STitle">
+                        </div>
+                        <div class="form-group">
+                            <label for="Baslik">Başlık</label>
+                            <input type="text" class="form-control" id="Baslik" placeholder="Sub Başlık" value="@Model.Baslik" name="Baslik">
+                        </div>
+                        <div class="form-group">
+                            <label for="Icerik">Sayfa İçeriği:</label>
+                            <textarea class="form-control" name="Icerik" id="Icerik">@Model.Icerik</textarea>
+
+                        </div>
+
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-success pull-right">Kaydet</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+@section BodyAlti{
+    <script src="~/Areas/SiteYonetimPaneli/Content/ckeditor/ckeditor.js"></script>
+    <script>
+        $(function () {
+            CKEDITOR.replace('Icerik')
+        })
+    </script>
+}
+

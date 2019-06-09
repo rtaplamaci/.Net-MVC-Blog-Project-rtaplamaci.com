@@ -1,0 +1,124 @@
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\rtaplamaciBlog.dll.config
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\rtaplamaciBlog.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\rtaplamaciBlog.pdb
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csc.exe
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csc.exe.config
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csc.rsp
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csi.exe
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csi.rsp
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.AppContext.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.Collections.Immutable.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.IO.FileSystem.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.Reflection.Metadata.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\vbc.exe
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\vbc.exe.config
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\vbc.rsp
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\VBCSCompiler.exe
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\VBCSCompiler.exe.config
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Microsoft.Web.Infrastructure.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Helpers.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Mvc.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Razor.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Deployment.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Razor.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Razor.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Deployment.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Razor.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Helpers.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Mvc.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.csproj.CoreCompileInputs.cache
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.csproj.CopyComplete
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.pdb
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Newtonsoft.Json.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Newtonsoft.Json.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.SqlServer.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.SqlServer.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\FakeData.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\FakeData.pdb
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Antlr3.Runtime.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Optimization.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\WebGrease.dll
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\Antlr3.Runtime.pdb
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Optimization.xml
+D:\rtaplamaciDotNetMvcBlog\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.csprojAssemblyReference.cache
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\rtaplamaciBlog.dll.config
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\rtaplamaciBlog.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\rtaplamaciBlog.pdb
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csc.exe
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csc.exe.config
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csc.rsp
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csi.exe
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\csi.rsp
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.AppContext.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.Collections.Immutable.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.IO.FileSystem.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\System.Reflection.Metadata.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\vbc.exe
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\vbc.exe.config
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\vbc.rsp
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\VBCSCompiler.exe
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\roslyn\VBCSCompiler.exe.config
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Antlr3.Runtime.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.SqlServer.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\FakeData.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Microsoft.Web.Infrastructure.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Newtonsoft.Json.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Helpers.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Mvc.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Optimization.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Razor.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Deployment.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Razor.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\WebGrease.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Antlr3.Runtime.pdb
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\EntityFramework.SqlServer.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\FakeData.pdb
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Newtonsoft.Json.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Optimization.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Razor.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Deployment.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Webpages.Razor.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Helpers.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\System.Web.Mvc.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.csprojAssemblyReference.cache
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.csproj.CoreCompileInputs.cache
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.csproj.CopyComplete
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.dll
+D:\rtaplamaciDotNetMvcBlog - Kopya\rtaplamaciBlog\rtaplamaciBlog\obj\Debug\rtaplamaciBlog.pdb

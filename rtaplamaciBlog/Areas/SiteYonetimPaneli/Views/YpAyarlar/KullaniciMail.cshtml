@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Kullanıcı ve Mail Ayarları | Site Yönetim Paneli";
+    Layout = "~/Areas/SiteYonetimPaneli/Views/Shared/YpLayout.cshtml";
+}
+@model rtaplamaciBlog.Models.KullaniciAyar
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Kullanıcı Ayarları Güncelle</h3>
+                </div>
+                @using (Html.BeginForm("KullaniciAyar", "YpAyarlar", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="box-body">
+                        @if (TempData["Uyari"] != null)
+                        {
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h4><i class="icon fa fa-info"></i> Uyarı!</h4>
+                                <p style="font-size:large">@TempData["Uyari"]</p>
+                            </div>
+                        }
+                        @if (TempData["Basarili"] != null)
+                        {
+                            <div class="alert alert-success alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h4><i class="icon fa fa-info"></i> Bilgi!</h4>
+                                <p style="font-size:large">@TempData["Basarili"]</p>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <label for="KullaniciAdi">Kullanıcı Adı</label>
+                            <input type="text" class="form-control" id="KullaniciAdi" placeholder="Kullanıcı Adı" name="KullaniciAdi" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ESifre">Eski Şifre</label>
+                            <input type="password" class="form-control" id="ESifre" placeholder="Eski Şifre" name="ESifre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Sifre">Yeni Şifre</label>
+                            <input type="password" class="form-control passControlK" id="Sifre" placeholder="Sifre" name="Sifre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="TSifre">Şifre Teyit</label>
+                            <input type="password" class="form-control passControlK" id="TSifre" placeholder="Şifre Teyit" name="TSifre" required>
+                        </div>
+
+                    </div>
+                    <div class="box-footer">
+                        <p id="sifreTeyitK" style="color:#cc0000; font-size:small;"><i class="fa fa-warning"></i> Girdiğiniz şifreler eşleşmemektedir. Lütfen kontrol ediniz.</p>
+                        <button type="submit" id="kBtn" class="btn btn-success pull-right" disabled>Kaydet</button>
+                    </div>
+                }
+            </div>
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Mail Ayarları</h3>
+                </div>
+                @using (Html.BeginForm("MailAyar", "YpAyarlar", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Email" placeholder="Email" name="Email" value="@Model.Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="EmailSifre">Email Şifresi</label>
+                            <input type="password" class="form-control passControlM" id="EmailSifre" placeholder="Email Şifresi" name="EmailSifre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="TEmailSifre">Şifre Teyit</label>
+                            <input type="password" class="form-control passControlM" id="TEmailSifre" placeholder="Şifre Teyit" name="TEmailSifre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="KSifre">Kullanıcı Şifresi</label>
+                            <input type="password" class="form-control" id="KSifre" placeholder="Kullanıcı Şifresi" name="KSifre" required>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <p id="sifreTeyitM" style="color:#cc0000; font-size:small;"><i class="fa fa-warning"></i> Girdiğiniz şifreler eşleşmemektedir. Lütfen kontrol ediniz.</p>
+                        <button type="submit" id="mBtn" class="btn btn-success pull-right" disabled>Kaydet</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+@section BodyAlti{
+    <script>
+        $(function () {
+            $(".passControlK").keyup(function () {
+                var KullaniciSifre = $('#Sifre').val();
+                var KullaniciSifreTeyit = $('#TSifre').val();
+                if (KullaniciSifre == KullaniciSifreTeyit) {
+                    $("#sifreTeyitK").hide();
+                    $("#kBtn").attr("disabled", false);
+                } else {
+                    $("#sifreTeyitK").show();
+                    $("#kBtn").attr("disabled", true);
+                }
+            });
+        });
+
+        $(function () {
+            $(".passControlM").keyup(function () {
+                var KullaniciSifre = $('#EmailSifre').val();
+                var KullaniciSifreTeyit = $('#TEmailSifre').val();
+                if (KullaniciSifre == KullaniciSifreTeyit) {
+                    $("#sifreTeyitM").hide();
+                    $("#mBtn").attr("disabled", false);
+                } else {
+                    $("#sifreTeyitM").show();
+                    $("#mBtn").attr("disabled", true);
+                }
+            });
+        });
+    </script>
+}
+

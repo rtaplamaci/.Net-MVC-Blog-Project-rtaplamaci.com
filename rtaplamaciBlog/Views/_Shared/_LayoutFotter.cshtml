@@ -1,0 +1,39 @@
+﻿@model rtaplamaciBlog.Models.ViewModels.VMPartialFotter
+<footer class="page-footer font-small pt-4" style="background-color: #000;">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase" style="color:#fff;">@Model.FotterAciklama.Baslik</h5>
+                <p style="color: rgba(255,255,255,.5);">@Html.Raw(Model.FotterAciklama.Aciklama)</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3 text-center">
+                <h5 class="text-uppercase" style="color:#fff;">Faydalı Linkler</h5>
+                <ul class="list-unstyled">
+                    @foreach (var faydaliLinkler in Model.FaydaliLinkler)
+                    {
+                        <li>
+                            <a href="@faydaliLinkler.Url" class="fotterLink">@faydaliLinkler.Adi</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3 text-center">
+                <h5 class="text-uppercase" style="color:#fff;">Sosyal Medya</h5>
+                <ul class="list-unstyled">
+                    @foreach (var sosyalMedya in Model.SosyalMedya)
+                    {
+                        <li>
+                            <a href="@sosyalMedya.Url" class="fotterLink" target="_blank"><i class="@sosyalMedya.Icon"></i></a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+        <span class="fotterLink">© 2018 - @DateTime.Now.Year</span>
+        <br />
+        <a href="http://rtaplamaci.com/" class="fotterLink">Developed By Ramazan Taplamacı - Software Developer</a>
+    </div>
+</footer>

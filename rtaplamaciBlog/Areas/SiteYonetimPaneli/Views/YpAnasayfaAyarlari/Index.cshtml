@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "Ana Sayfa Ayarları | Site Yönetim Paneli";
+    Layout = "~/Areas/SiteYonetimPaneli/Views/Shared/YpLayout.cshtml";
+}
+@model rtaplamaciBlog.Models.AnasayfaAyar
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Ana Sayfa Ayarları</h3>
+                </div>
+                @using (Html.BeginForm("Index", "YpAnasayfaAyarlari", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="box-body">
+                        @if (TempData["Basarili"] != null)
+                        {
+                            <div class="alert alert-success alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h4><i class="icon fa fa-info"></i> Bilgi!</h4>
+                                <p style="font-size:large">@TempData["Basarili"]</p>
+                            </div>
+                        }
+                        @if (TempData["Uyari"] != null)
+                        {
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h4><i class="icon fa fa-info"></i> Uyari!</h4>
+                                <p style="font-size:large">@TempData["Uyari"]</p>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <label for="MDescripton">Meta Description</label>
+                            <input type="text" class="form-control" id="MDescripton" placeholder="Meta Description" value="@Model.MDescripton" name="MDescripton">
+                        </div>
+                        <div class="form-group">
+                            <label for="MAuthor">Meta Author</label>
+                            <input type="text" class="form-control" id="MAuthor" placeholder="Meta Author" value="@Model.MAuthor" name="MAuthor">
+                        </div>
+                        <div class="form-group">
+                            <label for="MUrl">Meta Url</label>
+                            <input type="text" class="form-control" id="MUrl" placeholder="Meta Url" value="@Model.MUrl" name="MUrl">
+                        </div>
+                        <div class="form-group">
+                            <label for="MKeywords">Meta Keyword</label>
+                            <input type="text" class="form-control" id="MKeywords" placeholder="Meta Keyword" value="@Model.MKeywords" name="MKeywords">
+                        </div>
+                        <div class="form-group">
+                            <label for="STitle">Sayfa Title</label>
+                            <input type="text" class="form-control" id="STitle" placeholder="Sayfa Title" value="@Model.STitle" name="STitle">
+                        </div>
+                        <div class="form-group">
+                            <label for="AnasayfaIcerikGorseli">İçerik Görseli:</label>
+                            <div class="col-sm-12">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="col-md-12 col-sm-12 col-xs-12" src="~/Images/General/@Model.GDizin">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="AnasayfaIcerikGorseli">Görsel Seç:</label>
+                                                <input type="file" name="file">
+                                                <input type="hidden" name="GDizin" value="@Model.GDizin" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="GAlt">Görsel Açıklaması:</label>
+                                                <input type="text" class="form-control" id="GAlt" placeholder="Görsel Açıklaması" value="@Model.GAlt" name="GAlt">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="BBaslik">Birinci Başlık</label>
+                            <input type="text" class="form-control" id="BBaslik" placeholder="Birinci Başlık" value="@Model.BBaslik" name="BBaslik">
+                        </div>
+                        <div class="form-group">
+                            <label for="IBaslik">İkinci Başlık</label>
+                            <input type="text" class="form-control" id="IBaslik" placeholder="İkinci Başlık" value="@Model.IBaslik" name="IBaslik">
+                        </div>
+                        <div class="form-group">
+                            <label for="SBaslik">Sub Başlık</label>
+                            <input type="text" class="form-control" id="SBaslik" placeholder="Sub Başlık" value="@Model.SBaslik" name="SBaslik">
+                        </div>
+                        <div class="form-group">
+                            <label for="Icerik">Ana Sayfa İçeriği:</label>
+                            <textarea class="form-control" name="Icerik" id="Icerik">@Model.Icerik</textarea>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-success pull-right">Kaydet</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+@section BodyAlti{
+    <script src="~/Areas/SiteYonetimPaneli/Content/ckeditor/ckeditor.js"></script>
+    <script>
+        $(function () {
+            CKEDITOR.replace('Icerik')
+        })
+    </script>
+}

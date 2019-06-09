@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Ana Sayfa | Site Yönetim Paneli";
+    Layout = "~/Areas/SiteYonetimPaneli/Views/Shared/YpLayout.cshtml";
+}
+<section class="content-header">
+    <h1>
+        Anasayfa
+    </h1>
+</section>
+<section class="content">
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <h4><i class="icon fa fa-info"></i> Uyarı!</h4>
+        <p style="font-size:large">Güvenlik prosedürleri sebebiyle yaklaşık 20 dakika sonra oturumunuz sonlandırılacaktır. Yapacağınız güncellemelerde 20 dakikadan önce kayıt yapmayı unutmayınız. Gerekmesi durumunda 20 dakika sonra giriş yapıp kaydettiğiniz yerden işleminize devam edebilirsiniz! <br />İyi Çalışmalar... <br /> <br />Ramazan Taplamacı <br />Yazılım Geliştirici</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3>
+                        <i class="fa fa-newspaper-o"></i>
+                    </h3>
+                    <p>Siteyi Görüntüle</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-newspaper-o"></i>
+                </div>
+                <a href="~/" class="small-box-footer" target="_blank">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>
+                        <i class="fa fa-align-left"></i>
+                    </h3>
+                    <p>Yeni Blog Yazısı</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-align-left"></i>
+                </div>
+                <a href="~/SiteYonetimPaneli/YpBlogYazilari/Detay/0" class="small-box-footer">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>
+                        <i class="fa fa-list"></i>
+                    </h3>
+                    <p>Blog Yazıları</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-list"></i>
+                </div>
+                <a href="~/SiteYonetimPaneli/YpBlogYazilari/Liste" class="small-box-footer">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>
+                        <i class="fa fa-sign-out"></i>
+                    </h3>
+
+                    <p>Güvenli Çıkış</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-sign-out"></i>
+                </div>
+                <a href="~/SiteYonetimPaneli/YpCikisYap" class="small-box-footer">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+

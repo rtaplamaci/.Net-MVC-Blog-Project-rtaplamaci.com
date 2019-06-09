@@ -1,0 +1,34 @@
+﻿
+@model rtaplamaciBlog.Models.ViewModels.VMBlogDetay
+@{
+    ViewBag.Description = Model.Yazi.MDescripton;
+    ViewBag.Author = Model.Yazi.MAuthor;
+    ViewBag.Url = Model.Yazi.MUrl;
+    ViewBag.Keywords = Model.Yazi.MKeywords;
+    ViewBag.Title = Model.Yazi.STitle;
+    Layout = "~/Views/_Shared/_SiteLayout.cshtml";
+}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+    <div class="card mb-3">
+        <img class="card-img-top" src="~/Images/BlogContent/Normal/@Model.Yazi.NGDizin" alt="@Model.Yazi.NGAlt">
+        <div class="card-body">
+            <h3 class="card-title">@Model.Yazi.Baslik</h3>
+            <p class="card-text"><small class="text-muted">@Model.Yazi.Tarih.ToLongDateString()</small></p>
+            <p class="card-text" style="color: #000;">@Html.Raw(Model.Yazi.Icerik)</p>
+        </div>
+    </div>
+    <h4>Bunları da beğenebilirsiniz.</h4>
+    <div class="card-group">
+        @foreach (var oneri in Model.Oneri)
+        {
+            <div class="card col-md-3">
+                <a href="~/Blog/@oneri.Baslik.Replace(' ','-').Replace('ö', 'o').Replace('ü', 'u').Replace('ğ', 'g').Replace('ş', 's').Replace('ı', 'i').Replace('ç', 'c').Replace('Ö', 'O').Replace('Ü', 'U').Replace('Ğ', 'G').Replace('Ş', 'S').Replace('İ', 'I').Replace('Ç', 'C').Replace('#','-').ToLower()/Detay/@oneri.Id">
+                    <img class="card-img-top" src="~/Images/BlogContent/Mini/@Model.Yazi.MGDizin" alt="@Model.Yazi.MGAlt">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"><a href="~/Blog/@oneri.Baslik.Replace(' ','-').Replace('ö', 'o').Replace('ü', 'u').Replace('ğ', 'g').Replace('ş', 's').Replace('ı', 'i').Replace('ç', 'c').Replace('Ö', 'O').Replace('Ü', 'U').Replace('Ğ', 'G').Replace('Ş', 'S').Replace('İ', 'I').Replace('Ç', 'C').Replace('#','-').ToLower()/Detay/@oneri.Id">@oneri.Baslik</a></h5>
+                </div>
+            </div>
+        }
+    </div>
+</section>

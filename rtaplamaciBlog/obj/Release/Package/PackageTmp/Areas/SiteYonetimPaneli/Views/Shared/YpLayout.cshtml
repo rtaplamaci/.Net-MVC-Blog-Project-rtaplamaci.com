@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="~/Areas/SiteYonetimPaneli/Content/dist/adminlte.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    @RenderSection("Header", false)
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="~/SiteYonetimPaneli/YpAnasayfa" class="logo">
+                <span class="logo-mini">
+                    <b>SYP</b>
+                </span>
+                <span class="logo-lg">
+                    Site Yönetim Paneli
+                </span>
+            </a>
+            <nav class="navbar navbar-static-top">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="~/SiteYonetimPaneli/YpCikisYap" style="background-color:#c0392b">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>
+                        <a href="~/SiteYonetimPaneli/YpAnasayfa">
+                            <i class="fa fa-home"></i>
+                            <span>Ana Sayfa</span>
+                        </a>
+                    </li>
+                    <li class="header">SİTE YÖNETİMİ</li>
+                    <li>
+                        <a href="~/SiteYonetimPaneli/YpAnasayfaAyarlari">
+                            <i class="fa fa-home"></i>
+                            <span>Ana Sayfa Ayarları</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/SiteYonetimPaneli/YpIletisimPanelAyarlari">
+                            <i class="fa fa-phone"></i>
+                            <span>İletişim Paneli Ayarları</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-align-left"></i>
+                            <span>Blog Yazıları</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpBlogYazilari/PanelAyarlari">
+                                    <i class="fa fa-gear"></i> Blog Panel Ayarları
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpBlogYazilari/Liste">
+                                    <i class="fa fa-list"></i> Blog Yazıları
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpBlogYazilari/Detay/0">
+                                    <i class="fa fa-plus-square"></i> Yeni Yazı
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-crop"></i>
+                            <span>Layout  ve Genel Ayarlar</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/LayoutGorselAciklama">
+                                    <i class="fa fa-image"></i> Görsel ve Açıklama
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/SosyalMedya">
+                                    <i class="fa fa-share-alt"></i> Sosyal Medya
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/Menuler">
+                                    <i class="fa fa-bars"></i> Menüler
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/FooterAciklamasi">
+                                    <i class="fa fa-paragraph"></i> Footer Açıklaması
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/FaydaliLinkler">
+                                    <i class="fa fa-link"></i> Faydalı Linkler
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/FavIcon">
+                                    <i class="fa fa-bookmark"></i> Fav Icon
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/SiteYonetimPaneli/YpAyarlar/KullaniciMail">
+                                    <i class="fa fa-user"></i> Kullanıcı ve Mail
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <a href="http://rtaplamaci.com/"><b><i class="fa fa-envelope"></i> İletişim</b></a>
+            </div>
+            <strong>
+                Copyright &copy; 2019-@DateTime.Now.Year
+                <a href="http://rtaplamaci.com/" target="_blank">rtaplamaci</a>.
+            </strong> All rights reserved.
+        </footer>
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <script src="~/Areas/SiteYonetimPaneli/Content/dist/adminlte.min.js"></script>
+    <script>
+        var body = $('body');
+        console.log(body);
+    </script>
+    @RenderSection("BodyAlti", false)
+</body>
+</html>

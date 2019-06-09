@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Sosyal Medya Ayarları | Site Yönetim Paneli";
+    Layout = "~/Areas/SiteYonetimPaneli/Views/Shared/YpLayout.cshtml";
+}
+@model List<rtaplamaciBlog.Models.SosyalMedyaAyar>
+<section class="content-header">
+    <h1>
+        Sosyal Medya Ayarları
+    </h1>
+</section>
+<section class="content">
+    <div class="box">
+        <div class="box-header with-border">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                @using (Html.BeginForm("SosyalMedya", "YpAyarlar", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="Icon">Türü:</label>
+                                                <select class="form-control" id="Icon" name="Icon">
+                                                    <option value="fa fa-facebook">Facebook</option>
+                                                    <option value="fa fa-twitter">Twitter</option>
+                                                    <option value="fa fa-instagram">Instagram</option>
+                                                    <option value="fa fa-youtube">YouTube</option>
+                                                    <option value="fa fa-linkedin">LinkedIn</option>
+                                                    <option value="fa fa-medium">Medium</option>
+                                                    <option value="fa fa-pinterest">Pinterest</option>
+                                                    <option value="fa fa-tumblr">Tumblr</option>
+                                                    <option value="fa fa-flickr">Flickr</option>
+                                                    <option value="fa fa-reddit">Reddit</option>
+                                                    <option value="fa fa-snapchat">Snapchat</option>
+                                                    <option value="fa fa-whatsapp">WhatsApp</option>
+                                                    <option value="fa fa-github">GitHub</option>
+                                                    <option value="fa fa-gitlab">GitLab</option>
+                                                    <option value="fa fa-codepen">CodePen</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="form-group">
+                                                <label for="Sira">Sırası:</label>
+                                                <input type="number" class="form-control" id="Sira" value="1" name="Sira">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label for="Url">Url:</label>
+                                                <input type="text" class="form-control" id="Url" placeholder="Sosyal Medya Hesabı Urli" name="Url">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <button type="submit" class="btn btn-success pull-right">Kaydet</button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-body">
+            @if (TempData["Basarili"] != null)
+            {
+                <div class="alert alert-success alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <h4><i class="icon fa fa-info"></i> Bilgi!</h4>
+                    <p style="font-size:large">@TempData["Basarili"]</p>
+                </div>
+            }
+            <div class="box-body no-padding col-md-12">
+                <table class="table table-striped" id="liste">
+                    <thead>
+                        <tr>
+                            <th style="width: 100px; text-align: center;">İşlemler</th>
+                            <th style=" text-align: center;">Sıra</th>
+                            <th style="text-align: center;">Icon</th>
+                            <th style="text-align:center" class="hidden-sm hidden-xs">Url</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var sosyalmedya in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="row">
+                                        <a href="~/SiteYonetimPaneli/YpAyarlar/SosyalMedyaSil/@sosyalmedya.Id" onclick="return confirm('Silmek istediğinizden emin misiniz ?')" class="btn btn-danger" style="margin-left: 10px;"><i class="fa fa-trash"></i></a>
+                                    </div>
+                                </td>
+                                <td>@sosyalmedya.Sira</td>
+                                <td style="text-align: center;"><a href="@sosyalmedya.Url" target="_blank"><i class="@sosyalmedya.Icon"></i></a></td>
+                                <td style="text-align: center;">
+                                    <a href="@sosyalmedya.Url" class="hidden-sm hidden-xs" target="_blank">@sosyalmedya.Url</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+@section Header{
+    <link href="~/Areas/SiteYonetimPaneli/Content/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+}
+@section BodyAlti{
+    <script src="~/Areas/SiteYonetimPaneli/Content/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Areas/SiteYonetimPaneli/Content/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('#liste').DataTable()
+        })
+    </script>
+}

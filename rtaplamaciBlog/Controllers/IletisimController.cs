@@ -28,7 +28,7 @@ namespace rtaplamaciBlog.Controllers
             using (DBEntities db = new DBEntities())
             {
                 var model = db.KullaniciAyarlari.FirstOrDefault();
-                MailMessage mail = new MailMessage(model.Email, eMail);
+                MailMessage mail = new MailMessage(model.Email, model.Email);
                 SmtpClient client = new SmtpClient();
                 client.Port = 587;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;

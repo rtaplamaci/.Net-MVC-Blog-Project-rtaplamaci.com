@@ -33,7 +33,7 @@ namespace rtaplamaciBlog.Controllers
                 model.Oneri = db.BlogYazilari.Where(x => x.Id != id).OrderByDescending(x => x.Id).Take(4).ToList();
                 if (model.Yazi == null)
                 {
-                    return RedirectToAction("Index", "NotFound");
+                    return RedirectToAction("NotFound", "Error");
                 }
                 return View(model);
             }
@@ -50,7 +50,7 @@ namespace rtaplamaciBlog.Controllers
                 model.Oneri = db.BlogYazilari.Where(x => x.Id != id).OrderByDescending(x => x.Id).Take(4).ToList();
                 if (model.Yazi == null)
                 {
-                    return RedirectToAction("Index", "NotFound");
+                    return RedirectToAction("NotFound", "Error");
                 }
                 return View(model);
             }
